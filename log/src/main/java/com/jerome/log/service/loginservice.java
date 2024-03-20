@@ -11,8 +11,22 @@ public class loginservice {
     @Autowired
     private loginrepo rep;
 
-    public login log(String username, String password) {
+    public String log(String username, String password) {
         login user=rep.findByUsernameAndPassword(username, password);
-        return user;
-}
+        if(user!=null) {
+            return "Successfully logged in";
+        }
+        else{
+            return "Error";
+        }
+    }
+    public String register(login log) {
+        login user=rep.save(log);
+        if(user!=null) {
+            return "Successfully logged in";
+        }
+        else {
+            return "Error";
+        }
+    }
 }

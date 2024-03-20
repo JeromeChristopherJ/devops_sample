@@ -23,17 +23,35 @@ public class logincontroller {
  
         return "login";
     }
+    @GetMapping("/reg")
+    public String apu()
+    {
+ 
+        return "register";
+    }
  
     @PostMapping("/log")
     public String login(@ModelAttribute("user") login user) {
  
-        login oauthUser = service.log(user.getUsername(), user.getPassword());
+        String oauthUser = service.log(user.getUsername(), user.getPassword());
  
         System.out.print(oauthUser);
         if (Objects.nonNull(oauthUser)) {
             return "redirect:/disp";
         } else {
             return "redirect:/";
+        }
+    }
+
+    @PostMapping("/register")
+    public String register(@ModelAttribute("user") login user) {
+        String oauthUser = service.register(user);
+
+        System.out.print(oauthUser);
+        if (Objects.nonNull(oauthUser)) {
+            return "redirect:/";
+        } else {
+            return "redirect:/reg";
         }
     }
  

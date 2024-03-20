@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .login{
+          align-items: center;
+          justify-content: center;
+          font-style: italic;
+        }
+        body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: paleturquoise;
+        }
+      </style>
+</head>
+<body>
+    <div class="register">
+        <h2>Registeration Form</h2>
+        <form action="#" th:action="@{/register}" method="post">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" required placeholder="Enter your username"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required placeholder="Enter your password"><br><br>
+          <input type="submit" value="Register">
+        </form>
+      </div>
+</body>
+</html>
