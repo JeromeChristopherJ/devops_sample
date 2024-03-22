@@ -1,4 +1,4 @@
-package com.jerome.log.controller;
+package com.jerome.devops_sample.controller;
 
 import java.util.Objects;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.jerome.log.service.loginservice;
-import com.jerome.log.domain.*;
+import com.jerome.devops_sample.service.loginservice;
+import com.jerome.devops_sample.domain.*;
 
     @Controller
 public class logincontroller {

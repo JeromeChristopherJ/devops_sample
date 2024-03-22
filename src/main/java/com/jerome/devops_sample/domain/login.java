@@ -1,4 +1,4 @@
-package com.jerome.log.domain;
+package com.jerome.devops_sample.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

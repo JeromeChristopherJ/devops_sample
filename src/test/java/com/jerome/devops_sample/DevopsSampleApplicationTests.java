@@ -1,10 +1,10 @@
-package com.jerome.log;
+package com.jerome.devops_sample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LogApplicationTests {
+class DevopsSampleApplicationTests {
 
 	@Test
 	void contextLoads() {

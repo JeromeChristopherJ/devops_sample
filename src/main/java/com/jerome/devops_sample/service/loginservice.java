@@ -1,10 +1,10 @@
-package com.jerome.log.service;
+package com.jerome.devops_sample.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jerome.log.repository.loginrepo;
-import com.jerome.log.domain.login;
+import com.jerome.devops_sample.repository.loginrepo;
+import com.jerome.devops_sample.domain.login;
 
 @Service
 public class loginservice {
